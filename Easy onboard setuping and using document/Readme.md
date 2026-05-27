@@ -168,6 +168,26 @@ The application will be available at: `http://localhost/login`
 
 ---
 
+## Troubleshooting
+
+### PaddleOCR or Word Extraction Issues
+
+If you encounter issues with PaddleOCR or word extraction, follow these steps on ocr env:
+
+**Step 1: Uninstall conflicting packages**
+```bash
+python -m pip uninstall -y paddlepaddle paddleocr paddlex
+```
+
+**Step 2: Install compatible versions**
+```bash
+python -m pip install paddlepaddle==3.2.0 paddleocr==3.3.3
+```
+
+This resolves most dependency conflicts related to paddle OCR functionality.
+
+---
+
 ## Video Tutorials
 
 Refer to these video tutorials for additional guidance:
